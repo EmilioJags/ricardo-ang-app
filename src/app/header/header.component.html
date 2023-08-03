@@ -1,0 +1,29 @@
+<header>
+  <div class="topnav">
+    <!--<a class="active" id="home" onclick="updateSelected('home')" href="/home"
+      >Home</a
+    >
+    <a
+      [ngClass]="{ active: ccActive }"
+      id="cc"
+      (onclick)="updateSelected('cc')"
+      href="/code-challenges"
+      >Code Challenges</a
+    >
+    <a
+      [ngClass]="{ active: ddActive }"
+      id="dd"
+      (onclick)="updateSelected('dd')"
+      href="/drag-drop"
+      >Drag and Drop example</a
+    >-->
+    <a
+      *ngFor="let item of links"
+      [ngClass]="{ active: item.active }"
+      (click)="updateSelected(item.counter)"
+      id="{{ item.id }}"
+      href="{{ item.ref }}"
+      >{{ item.text }}</a
+    >
+  </div>
+</header>

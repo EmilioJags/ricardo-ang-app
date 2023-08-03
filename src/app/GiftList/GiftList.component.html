@@ -1,0 +1,58 @@
+<h1>Lista de regalos para la casita pequeña de Karo y Mario!</h1>
+
+<div>
+  <form>
+    <table mat-table class="table" id="table">
+      <tr style="background-color: orange">
+        <th>Apartado</th>
+        <th>Producto</th>
+        <th>Quien regala</th>
+        <th>Nota extra</th>
+        <th>Confirmar aportacion</th>
+      </tr>
+      <tr
+        *ngFor="let item of itemList"
+        [style.background-color]="item.id % 2 == 0 ? 'white' : 'lightblue'"
+      >
+        <td>
+          <mat-checkbox
+            class="mat-checkbox"
+            [disabled]="true"
+            [checked]="!item.available"
+          ></mat-checkbox>
+        </td>
+        <td class="item-name">{{ item.name }}</td>
+        <td>
+          <input
+            [disabled]="!item.available"
+            id="who-{{ item.id }}"
+            class="form-control"
+            (keyup)="onKeyWho($event)"
+            [style.background-color]="item.id % 2 == 0 ? 'white' : 'white'"
+            [placeholder]="!item.available ? '-- secreto --' : 'Quien se ofrece!?'"
+          />
+        </td>
+        <td>
+          <input
+            id="note-{{ item.id }}"
+            class="form-control"
+            (keyup)="onKeyNote($event)"
+            [style.background-color]="item.id % 2 == 0 ? 'white' : 'white'"
+            [disabled]="!item.available"
+            [placeholder]="!item.available ? 'gracias por su aportacion!!' : 'Mensaje a su anfitrion?'
+            "
+          />
+        </td>
+        <button
+          type="button"
+          id="btn-{{ item.id }}"
+          class="btn btn-danger"
+          [disabled]="!item.available"
+          (click)="saveChange($event)"
+        >
+          Confirmar!
+        </button>
+      </tr>
+    </table>
+  </form>
+</div>

@@ -1,0 +1,247 @@
+[
+    {
+       "id":1,
+       "name":"Quesera",
+       "available":false,
+       "giftby":"karo",
+       "note":""
+    },
+    {
+       "id":2,
+       "name":"Rayador",
+       "available":false,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":3,
+       "name":"2 vasos de plastico chicos",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":4,
+       "name":"4 Vasos de vidrio",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":5,
+       "name":"Cubiertos",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":6,
+       "name":"Tabla para amasar",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":7,
+       "name":"Guante de cocina",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":8,
+       "name":"2 cepillos para inodoro",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":9,
+       "name":"Cucharon",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":10,
+       "name":"Tostador de pan (negro)",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":11,
+       "name":"Toallas para cocina",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":12,
+       "name":"Freidora de aire",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":13,
+       "name":"Porta vasos",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":14,
+       "name":"Refractario de vidrio",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":15,
+       "name":"Escoba y recogedor",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":16,
+       "name":"Trapeador",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":17,
+       "name":"Tapete de entrada",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":18,
+       "name":"Set de tapetes para baño",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":19,
+       "name":"Recipiente para almacenar arroz",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":20,
+       "name":"Recipiente para almacenar frijol",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":21,
+       "name":"Recipiente para almacenar azucar",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":22,
+       "name":"Olla para hervir leche (1.8 litros)",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":23,
+       "name":"Sabanas para cama Queen",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":24,
+       "name":"Colcha ligera para cama Queen",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":25,
+       "name":"Jarra 3 litros (vidrio)",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":26,
+       "name":"Tapa para microondas",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":27,
+       "name":"Comal de hierro para huevo",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":28,
+       "name":"Colador",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":29,
+       "name":"Mandil de cocina",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":30,
+       "name":"Tuppers (de preferencia vidrio)",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":31,
+       "name":"Plumero",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":32,
+       "name":"Ganchos para tendedero",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":33,
+       "name":"Matamoscas",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":34,
+       "name":"Guarda cebolla",
+       "available":true,
+       "giftby":"",
+       "note":""
+    },
+    {
+       "id":35,
+       "name":"Medidor de vidrio",
+       "available":true,
+       "giftby":"",
+       "note":""
+    }
+]

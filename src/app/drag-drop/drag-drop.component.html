@@ -1,0 +1,26 @@
+<div class="row">
+  <div
+    cdkDropList
+    #ln1="cdkDropList"
+    [cdkDropListData]="listNum"
+    [cdkDropListConnectedTo]="[ln2]"
+    (cdkDropListDropped)="drop($event)"
+    class="col-6"
+  >
+    <div cdkDrag class="block block-1" *ngFor="let n of listNum">
+      <span>{{ n }}</span>
+    </div>
+  </div>
+  <div
+    cdkDropList
+    #ln2="cdkDropList"
+    [cdkDropListData]="listNum2"
+    [cdkDropListConnectedTo]="[ln1]"
+    (cdkDropListDropped)="drop($event)"
+    class="col-6"
+  >
+    <div cdkDrag class="block block-2" *ngFor="let n of listNum2">
+      <span>{{ n }}</span>
+    </div>
+  </div>
+</div>

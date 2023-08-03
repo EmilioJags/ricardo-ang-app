@@ -1,0 +1,67 @@
+table {
+    width: 100%;
+    padding: 1rem;
+    column-width: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    background-color: #7dc47c; 
+    border-radius: 5%;
+    text-align: center;
+    width: 50%;
+    height: max-content;
+}
+
+table input {
+    height: fit-content;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 10px;
+    font-size: large;
+}
+
+.item-name {
+    font-size: large;
+    text-align: center;
+    justify-content: left;
+
+}
+
+table tr {
+    margin: 5px;
+    padding: 50px;
+    background-color: lightblue;
+    border-width: 10px;
+    border-color: red;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.mat-checkbox {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}

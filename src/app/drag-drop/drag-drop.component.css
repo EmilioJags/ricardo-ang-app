@@ -1,0 +1,26 @@
+body {
+    display: flexbox;
+}
+
+.block {
+    height: 30px;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.block-1 {
+    background-color: green;
+}
+
+.block-2 {
+    background-color: orange;
+}
+
+.block-2:hover {
+    background-color: lightyellow;
+}
+
+.block-1:hover {
+    background-color: lightyellow;
+}
