@@ -38,6 +38,7 @@ export class GiftListComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('fetching data ...');
     this.sampleData();
   }
 
@@ -47,10 +48,9 @@ export class GiftListComponent implements OnInit {
       this.itemList[id - 1].available = !this.itemList[id - 1].available;
       (document.getElementById('who-' + id) as HTMLInputElement).value =
         '-- secreto --';
-      console.log(this.itemList);
       this.giftService.saveData(this.itemList);
       (document.getElementById('note-' + id) as HTMLInputElement).value =
-      'gracias por su aportacion!!';
+        'gracias por su aportacion!!';
     }
   }
   onKeyWho(event: any) {
