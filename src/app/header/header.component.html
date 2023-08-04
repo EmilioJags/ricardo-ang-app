@@ -1,23 +1,38 @@
-<header>
-  <div class="topnav">
-    <!--<a class="active" id="home" onclick="updateSelected('home')" href="/home"
-      >Home</a
-    >
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/gift-list">Home</a>
+      </li>
+      <!--
+        <li class="nav-item">
+        <a class="nav-link" href="/code-challenges">Code Challenges</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/drag-drop">Drag & Drop example</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="/gift-list">Regalos Casita</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--<ul class="nav nav-tabs">
+  <li class="nav-item">
     <a
-      [ngClass]="{ active: ccActive }"
-      id="cc"
-      (onclick)="updateSelected('cc')"
-      href="/code-challenges"
-      >Code Challenges</a
-    >
-    <a
-      [ngClass]="{ active: ddActive }"
-      id="dd"
-      (onclick)="updateSelected('dd')"
-      href="/drag-drop"
-      >Drag and Drop example</a
-    >-->
-    <a
+      class="nav-link active"
       *ngFor="let item of links"
       [ngClass]="{ active: item.active }"
       (click)="updateSelected(item.counter)"
@@ -25,5 +40,6 @@
       href="{{ item.ref }}"
       >{{ item.text }}</a
     >
-  </div>
-</header>
+  </li>
+</ul>
+-->

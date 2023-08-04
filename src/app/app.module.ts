@@ -11,10 +11,11 @@ import { CodeChallengesComponent } from './code-challenges/code-challenges.compo
 import { GiftListComponent } from './GiftList/GiftList.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
+import { NiceheaderComponent } from './niceheader/niceheader.component';
+import {} from 'bootstrap';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     DragDropComponent,
     CodeChallengesComponent,
     GiftListComponent,
+    NiceheaderComponent,
   ],
   imports: [
     BrowserModule,

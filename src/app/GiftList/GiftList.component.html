@@ -1,9 +1,8 @@
-<h1>Lista de regalos para la casita pequeña de Karo y Mario!</h1>
-
+<h1>Lista de regalos para la casita pequeña de Karola y Mario!</h1>
 <div>
   <form>
-    <table mat-table class="table" id="table">
-      <tr style="background-color: orange">
+    <table mat-table class="table table-striped table-bordered" id="table">
+      <tr style="background-color: orange; text-align: center;">
         <th>Apartado</th>
         <th>Producto</th>
         <th>Quien regala</th>
@@ -27,26 +26,29 @@
             [disabled]="!item.available"
             id="who-{{ item.id }}"
             class="form-control"
-            (keyup)="onKeyWho($event)"
             [style.background-color]="item.id % 2 == 0 ? 'white' : 'white'"
-            [placeholder]="!item.available ? '-- secreto --' : 'Quien se ofrece!?'"
+            [placeholder]="
+              !item.available ? '-- secreto --' : 'Quien se ofrece!?'
+            "
           />
         </td>
         <td>
           <input
             id="note-{{ item.id }}"
             class="form-control"
-            (keyup)="onKeyNote($event)"
             [style.background-color]="item.id % 2 == 0 ? 'white' : 'white'"
             [disabled]="!item.available"
-            [placeholder]="!item.available ? 'gracias por su aportacion!!' : 'Mensaje a su anfitrion?'
+            [placeholder]="
+              !item.available
+                ? 'gracias por su aportacion!!'
+                : 'Mensaje a su anfitrion?'
             "
           />
         </td>
         <button
+          class="btn btn-primary"
           type="button"
           id="btn-{{ item.id }}"
-          class="btn btn-danger"
           [disabled]="!item.available"
           (click)="saveChange($event)"
         >

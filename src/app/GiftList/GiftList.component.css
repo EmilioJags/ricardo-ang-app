@@ -6,11 +6,11 @@ table {
     justify-content: center;
 }
 
+
 button {
     margin-bottom: 1rem;
     margin-top: 1rem;
-    margin-left: 3rem;
-    background-color: #7dc47c; 
+    margin-left: 3rem; 
     border-radius: 5%;
     text-align: center;
     width: 50%;
@@ -37,9 +37,7 @@ table input {
 table tr {
     margin: 5px;
     padding: 50px;
-    background-color: lightblue;
-    border-width: 10px;
-    border-color: red;
+    background-color: lightblue; 
     align-items: center;
     justify-content: center;
 }

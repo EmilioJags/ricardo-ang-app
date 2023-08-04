@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  constructor() {}
+  constructor(router: Router) {}
   links = [
     {
       id: 'home',
@@ -44,7 +45,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {}
 
-  updateSelected(event: any) { 
-    //event.active = !event.active;
+  updateSelected(event: any) {
+    this.links[event].active = !this.links[event].active;
+    this.links[event].className = 'active';
   }
 }

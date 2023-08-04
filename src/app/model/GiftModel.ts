@@ -1,7 +1,7 @@
 export interface GiftModel {
-  id: number;
+  id?: number;
   name?: string;
   available: boolean;
   giftby?: string;
-  note?: string;
+  note: string;
 }

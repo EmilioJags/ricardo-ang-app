@@ -44,24 +44,40 @@ export class GiftListComponent implements OnInit {
 
   saveChange(event: any) {
     let id = Number((event.target.id + '').substring(4));
-    if (this.itemList[id - 1].giftby !== '') {
+    this.itemList[id - 1].giftby = (
+      document.getElementById('who-' + id) as HTMLInputElement
+    ).value;
+    if (
+      this.itemList[id - 1].giftby !== '' &&
+      this.isEmpty(this.itemList[id - 1].giftby)
+    ) {
+      this.itemList[id - 1].note = (
+        document.getElementById('note-' + id) as HTMLInputElement
+      ).value;
       this.itemList[id - 1].available = !this.itemList[id - 1].available;
-      (document.getElementById('who-' + id) as HTMLInputElement).value =
-        '-- secreto --';
       this.giftService.saveData(this.itemList);
-      (document.getElementById('note-' + id) as HTMLInputElement).value =
-        'gracias por su aportacion!!';
+      this.fixInputs(id);
+    } else {
+      (document.getElementById('who-' + id) as HTMLInputElement).value = '';
     }
   }
+
+  fixInputs(id: number) {
+    (document.getElementById('who-' + id) as HTMLInputElement).value =
+      '-- secreto --';
+    (document.getElementById('note-' + id) as HTMLInputElement).value =
+      'gracias por su aportacion!!';
+  }
+
+  isEmpty(str: string): boolean {
+    return str.trim().length > 0;
+  }
+
   onKeyWho(event: any) {
     let id = Number(event.target.id.substring(4)) - 1;
     this.itemList[id].giftby = event.target.value;
   }
   onKeyNote(event: any) {
     let id = Number(event.target.id.substring(4)) - 1;
-    if (typeof this.itemList[id].note === undefined)
-      this.itemList[id].note = '';
-    this.itemList[id].note = event.target.value;
-    console.log(this.itemList[id].note);
   }
 }
