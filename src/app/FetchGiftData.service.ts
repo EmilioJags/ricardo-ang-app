@@ -10,11 +10,11 @@ import { DataInterface } from './model/dataInterface';
 })
 export class FetchGiftDataService {
   private url = 'http://localhost:8080/api/casita';
-
+  private URL_t = 'https://ricardo-mycvapp.herokuapp.com/api/casita';
   constructor(private http: HttpClient) {}
   dataI: DataInterface | undefined;
   async getData(): Promise<Observable<DataInterface>> {
-    return this.http.get<DataInterface>(this.url + '/1').pipe(
+    return this.http.get<DataInterface>(this.URL_t + '/1').pipe(
       map((res) => {
         return res;
       })
@@ -22,7 +22,9 @@ export class FetchGiftDataService {
   }
 
   saveData(data: any) {
-    this.http.post<any>(this.url, data).subscribe(() => console.log("saved ... ")); 
+    this.http
+      .post<any>(this.URL_t, data)
+      .subscribe(() => console.log('saved ... '));
   }
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
