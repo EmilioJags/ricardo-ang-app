@@ -11,18 +11,18 @@
       </tr>
       <tr
         *ngFor="let item of itemList"
-        [style.background-color]="item.id % 2 == 0 ? 'white' : 'lightblue'"
+        [style.background-color]="item.id % 2 == 0 ? '#ececec' : 'lightblue'"
       >
-        <td>
+        <td style="width: 1rem; ">
           <mat-checkbox
             class="mat-checkbox"
             [disabled]="true"
             [checked]="!item.available"
           ></mat-checkbox>
         </td>
-        <td class="item-name">{{ item.name }}</td>
-        <td>
-          <input
+        <td style="width: 10%;" class="item-name">{{ item.name }}</td>
+        <td style="width: 10%;">
+          <input style="width: 35vw;"
             [disabled]="!item.available"
             id="who-{{ item.id }}"
             class="form-control"
@@ -33,7 +33,7 @@
           />
         </td>
         <td>
-          <input
+          <input style="width: 35vw;"
             id="note-{{ item.id }}"
             class="form-control"
             [style.background-color]="item.id % 2 == 0 ? 'white' : 'white'"
@@ -52,7 +52,7 @@
           [disabled]="!item.available"
           (click)="saveChange($event)"
         >
-          Confirmar!
+          Listo!
         </button>
       </tr>
     </table>
