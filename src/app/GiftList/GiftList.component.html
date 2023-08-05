@@ -20,8 +20,8 @@
             [checked]="!item.available"
           ></mat-checkbox>
         </td>
-        <td style="width: 10%;" class="item-name">{{ item.name }}</td>
-        <td style="width: 10%;">
+        <td style="width: 15%;" class="item-name">{{ item.name }}</td>
+        <td style="width: 25%;">
           <input style="width: 35vw;"
             [disabled]="!item.available"
             id="who-{{ item.id }}"
@@ -32,7 +32,7 @@
             "
           />
         </td>
-        <td>
+        <td style="width: 25%;">
           <input style="width: 35vw;"
             id="note-{{ item.id }}"
             class="form-control"
