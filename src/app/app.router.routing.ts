@@ -7,7 +7,7 @@ import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { GiftListComponent } from './GiftList/GiftList.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/gift-list', pathMatch: 'full' },
+  { path: '', redirectTo: 'gift-list', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'code-challenges', component: CodeChallengesComponent },
   { path: 'drag-drop', component: DragDropComponent },
