@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import * as myData from '../resources/gifts.json';
+import * as imagebools from '../resources/img-bools.json';
 import { HttpClient } from '@angular/common/http';
-import { Observable, map } from 'rxjs';
-import { DataInterface } from '../model/dataInterface';
 import { FetchGiftDataService } from '../FetchGiftData.service';
-import { GiftModel } from '../model/GiftModel';
+import * as imagePos from '../resources/imagenes-names.json';
 
 @Component({
   selector: 'app-GiftList',
@@ -12,15 +10,22 @@ import { GiftModel } from '../model/GiftModel';
   styleUrls: ['./GiftList.component.css'],
 })
 export class GiftListComponent implements OnInit {
-  private url = 'http://localhost:8080/api/casita/1';
   constructor(
     private http: HttpClient,
     private giftService: FetchGiftDataService
   ) {}
-
+  imagez = 'assets/img/tapy.png';
+  imageList: any = [];
+  imageVisible: any = [];
   itemList: any = [];
-  data = myData;
-  displayedCols: string[] = ['Objeto(s)', 'Regalado por:', 'Nota extra:'];
+  displayedCols: string[] = [
+    'Apartado',
+    'Producto:',
+    'Cantidad',
+    'Quien regala:',
+    'Nota extra:',
+    'Confirmar',
+  ];
   res: string = '';
   obj: any = {};
   sampleData() {
@@ -40,8 +45,17 @@ export class GiftListComponent implements OnInit {
   ngOnInit() {
     console.log('fetching data ...');
     this.sampleData();
+    for (let i in imagebools) {
+      this.imageVisible.push(imagebools[i]);
+    }
+    for (let i in imagePos) {
+      this.imageList.push(imagePos[i]);
+    } 
   }
 
+  imgHover() {
+    console.log('looking ..');
+  }
   saveChange(event: any) {
     let id = Number((event.target.id + '').substring(4));
     this.itemList[id - 1].giftby = (

@@ -15,7 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
 import { NiceheaderComponent } from './niceheader/niceheader.component';
-import {} from 'bootstrap';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -37,6 +37,7 @@ import {} from 'bootstrap';
     BrowserAnimationsModule,
     MatCheckboxModule,
     HttpClientModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

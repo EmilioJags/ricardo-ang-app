@@ -1,28 +1,55 @@
-<h1>Lista de regalos para la casita pequeña de Karola y Mario!</h1>
+<h1 style="align-items: center; align-content: center">
+  Lista de regalos para la casita pequeña de Karola y Mario!
+</h1>
+<!--
+    
+<p class="one">HOVER OVER ME - IMG IS SIBLING</p>
+<img src="http://www.placecage.com/100/100" />
+<p
+  class="two"
+  (mouseenter)="show = !show"
+  (mouseleave)="show = !show"
+  (focus)="show = !show"
+>
+  HOVER OVER ME -IMG IS CHILD
+  <img [hidden]="show" src="./src/resources/tapy.png" />
+</p>-->
 <div>
   <form>
     <table mat-table class="table table-striped table-bordered" id="table">
-      <tr style="background-color: orange; text-align: center;">
-        <th>Apartado</th>
-        <th>Producto</th>
-        <th>Quien regala</th>
-        <th>Nota extra</th>
-        <th>Confirmar aportacion</th>
+      <tr style="background-color: orange; text-align: center">
+        <th *ngFor="let name of displayedCols">{{ name }}</th>
       </tr>
       <tr
         *ngFor="let item of itemList"
         [style.background-color]="item.id % 2 == 0 ? '#ececec' : 'lightblue'"
       >
-        <td style="width: 1rem; ">
+        <td style="width: 1rem">
           <mat-checkbox
+            style="background: none"
             class="mat-checkbox"
             [disabled]="true"
             [checked]="!item.available"
           ></mat-checkbox>
         </td>
-        <td style="width: 15%;" class="item-name">{{ item.name }}</td>
-        <td style="width: 25%;">
-          <input style="width: 35vw;"
+        <td style="width: 15%" class="item-name">
+          <button
+            class="tooltip-btn" 
+            (click)="imageVisible[item.id - 1] = !imageVisible[item.id - 1]"
+          >
+            <img
+              [hidden]="false"
+              style="width: 9rem; height: 9rem"
+              [src]="imageList[item.id - 1].name"
+              alt="img-not-loaded-yet"
+            />
+          </button>
+          {{ item.name }}
+        </td>
+        <td>2</td>
+        <td style="width: 25%">
+          <input
+            style="width: 35vw"
             [disabled]="!item.available"
             id="who-{{ item.id }}"
             class="form-control"
@@ -32,8 +59,9 @@
             "
           />
         </td>
-        <td style="width: 25%;">
-          <input style="width: 35vw;"
+        <td style="width: 25%">
+          <input
+            style="width: 35vw"
             id="note-{{ item.id }}"
             class="form-control"
             [style.background-color]="item.id % 2 == 0 ? 'white' : 'white'"

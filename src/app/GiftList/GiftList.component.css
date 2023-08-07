@@ -7,22 +7,45 @@ table {
 }
 
 
-button {
+.item-name:hover img {
+    display: inline; 
+}
+
+.tooltip-btn {
+    border-radius: 95%;
+    border: none; 
+    padding: 20px; 
+    text-decoration: none; 
+    font-size: 16px;
+    margin: 4px 2px;
+    background: none;
+}
+
+.tooltip-btn+img {
+    display: block;
+}
+
+p.two:hover img {
+    display: block;
+}
+
+.btn {
     margin-bottom: 1rem;
     margin-top: 1rem;
-    margin-left: 3rem; 
+    margin-left: 3rem;
     border-radius: 5%;
     width: auto;
     height: max-content;
 }
 
-table input { 
+
+table input {
     height: fit-content;
     align-items: center;
     justify-items: center;
     justify-content: center;
     display: flex;
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
 .item-name {
@@ -32,8 +55,8 @@ table input {
 
 }
 
-table tr { 
-    background-color: lightblue; 
+table tr {
+    background-color: lightblue;
     align-items: center;
     justify-content: center;
 }
