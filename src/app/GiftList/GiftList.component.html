@@ -16,7 +16,12 @@
 </p>-->
 <div>
   <form>
-    <table mat-table class="table table-striped table-bordered" id="table">
+    <table
+      style="margin-left: 2rem; margin-right: 2rem"
+      mat-table
+      class="table table-striped table-bordered"
+      id="table"
+    >
       <tr style="background-color: orange; text-align: center">
         <th *ngFor="let name of displayedCols">{{ name }}</th>
       </tr>
@@ -33,20 +38,22 @@
           ></mat-checkbox>
         </td>
         <td style="width: 15%" class="item-name">
-          <button
-            class="tooltip-btn" 
-            (click)="imageVisible[item.id - 1] = !imageVisible[item.id - 1]"
-          >
-            <img
-              [hidden]="false"
-              style="width: 9rem; height: 9rem"
-              [src]="imageList[item.id - 1].name"
-              alt="img-not-loaded-yet"
-            />
-          </button>
+          <div style="background: none">
+            <button
+              class="tooltip-btn"
+              (click)="imageVisible[item.id - 1] = !imageVisible[item.id - 1]"
+            >
+              <img
+                [hidden]="false"
+                style="width: 8rem; height: 9rem"
+                [src]="imageList[item.id - 1].name"
+                alt="img-not-loaded-yet"
+              />
+            </button>
+          </div>
           {{ item.name }}
         </td>
-        <td>2</td>
+        <td style="text-align: center">{{ item.amount }}</td>
         <td style="width: 25%">
           <input
             style="width: 35vw"
@@ -73,15 +80,19 @@
             "
           />
         </td>
-        <button
-          class="btn btn-primary"
-          type="button"
-          id="btn-{{ item.id }}"
-          [disabled]="!item.available"
-          (click)="saveChange($event)"
-        >
-          Listo!
-        </button>
+        <td style="background: none">
+          <div style="background: none">
+            <button
+              class="btn btn-primary"
+              type="button"
+              id="btn-{{ item.id }}"
+              [disabled]="!item.available"
+              (click)="saveChange($event)"
+            >
+              Listo!
+            </button>
+          </div>
+        </td>
       </tr>
     </table>
   </form>

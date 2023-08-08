@@ -45,12 +45,23 @@ export class GiftListComponent implements OnInit {
   ngOnInit() {
     console.log('fetching data ...');
     this.sampleData();
+    if (this.itemList.length == 0) {
+      var dummy = {
+        id: 1,
+        name: 'Rayador',
+        available: true,
+        giftby: '',
+        note: '',
+        amount: 1,
+      };
+      this.itemList.push(dummy);
+    }
     for (let i in imagebools) {
       this.imageVisible.push(imagebools[i]);
     }
     for (let i in imagePos) {
       this.imageList.push(imagePos[i]);
-    } 
+    }
   }
 
   imgHover() {
@@ -85,13 +96,5 @@ export class GiftListComponent implements OnInit {
 
   isEmpty(str: string): boolean {
     return str.trim().length > 0;
-  }
-
-  onKeyWho(event: any) {
-    let id = Number(event.target.id.substring(4)) - 1;
-    this.itemList[id].giftby = event.target.value;
-  }
-  onKeyNote(event: any) {
-    let id = Number(event.target.id.substring(4)) - 1;
   }
 }
