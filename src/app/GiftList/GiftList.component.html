@@ -37,7 +37,7 @@
             [checked]="!item.available"
           ></mat-checkbox>
         </td>
-        <td style="width: 15%" class="item-name">
+        <td style="width: 15%; font-weight: bold;" class="item-name">
           <div style="background: none">
             <button
               class="tooltip-btn"
@@ -45,18 +45,18 @@
             >
               <img
                 [hidden]="false"
-                style="width: 8rem; height: 9rem"
-                [src]="imageList[item.id - 1].name"
+                [style]="imageNames[item.id - 1].size"
+                [src]="imageNames[item.id - 1].name"
                 alt="img-not-loaded-yet"
               />
             </button>
           </div>
           {{ item.name }}
         </td>
-        <td style="text-align: center">{{ item.amount }}</td>
-        <td style="width: 25%">
+        <td style="text-align: center; font-weight: bold;">{{ item.amount }}</td>
+        <td style="width: 30%">
           <input
-            style="width: 35vw"
+            style="width: 30vw"
             [disabled]="!item.available"
             id="who-{{ item.id }}"
             class="form-control"
@@ -66,9 +66,9 @@
             "
           />
         </td>
-        <td style="width: 25%">
+        <td style="width: 30%">
           <input
-            style="width: 35vw"
+            style="width: 30vw"
             id="note-{{ item.id }}"
             class="form-control"
             [style.background-color]="item.id % 2 == 0 ? 'white' : 'white'"

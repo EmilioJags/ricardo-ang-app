@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as imagebools from '../resources/img-bools.json';
 import { HttpClient } from '@angular/common/http';
 import { FetchGiftDataService } from '../FetchGiftData.service';
-import * as imagePos from '../resources/imagenes-names.json';
+import * as names from '../resources/imagenes-names.json';
 
 @Component({
   selector: 'app-GiftList',
@@ -15,7 +15,7 @@ export class GiftListComponent implements OnInit {
     private giftService: FetchGiftDataService
   ) {}
   imagez = 'assets/img/tapy.png';
-  imageList: any = [];
+  imageNames: any = [];
   imageVisible: any = [];
   itemList: any = [];
   displayedCols: string[] = [
@@ -59,8 +59,8 @@ export class GiftListComponent implements OnInit {
     for (let i in imagebools) {
       this.imageVisible.push(imagebools[i]);
     }
-    for (let i in imagePos) {
-      this.imageList.push(imagePos[i]);
+    for (let i in names) {
+      this.imageNames.push(names[i]);
     }
   }
 

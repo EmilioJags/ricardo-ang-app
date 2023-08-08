@@ -1,106 +1,165 @@
 [{
-    "name":"assets/img/quesero.png"
+    "name":"assets/img/quesero.png",
+    "size":"width: 10rem; height: 11rem"
 },
 {
-    "name":"assets/img/rayador.png"
+    "name":"assets/img/rayador.png",
+    "size":"width: 8rem; height: 9rem"
 },
 {
-    "name":"assets/img/vaso-plastico.png"
+    "name":"assets/img/vaso-plastico.png",
+    "size":"width: 10rem; height: 10rem"
 },
 {
-    "name":"assets/img/vasos-vidrio.png"
+    "name":"assets/img/vasos-vidrio.png",
+    "size":"width: 10rem; height: 10rem"
 },
 {
-    "name":"assets/img/cubiertos.png"
+    "name":"assets/img/cubiertos.png",
+    "size":"width: 10rem; height: 10rem"
 },
 {
-    "name":"assets/img/tabla-amasar.png"
+    "name":"assets/img/tabla-amasar.png",
+    "size":"width: 12rem; height: 13rem"
 },
 {
-    "name":"assets/img/guante-cocina.png"
+    "name":"assets/img/guante-cocina.png",
+    "size":"width: 10rem; height: 9rem"
 },
 {
-    "name":"assets/img/limpia-bano.png"
+    "name":"assets/img/limpia-bano.png",
+    "size":"width: 8rem; height: 13rem"
 },
 {
-    "name":"assets/img/cucharon.png"
+    "name":"assets/img/cucharon.png",
+    "size":"width: 8rem; height: 9rem"
 },
 {
-    "name":"assets/img/tostador.png"
+    "name":"assets/img/tostador.png",
+    "size":"width: 10rem; height: 11rem"
 },
 {
-    "name":"assets/img/toalla-cocina.png"
+    "name":"assets/img/toalla-cocina.png",
+    "size":"width: 10rem; height: 11rem"
 },
 {
-    "name":"assets/img/freidora.png"
+    "name":"assets/img/freidora.png",
+    "size":"width: 10rem; height: 11rem"
 },
 {
-    "name":"assets/img/porta-vasos.png"
+    "name":"assets/img/porta-vasos.png",
+    "size":"width: 10rem; height: 11rem"
 },
 {
-    "name":"assets/img/refractario-vidrio.png"
+    "name":"assets/img/refractario-vidrio.png",
+    "size":"width: 11rem; height: 12rem"
 },
 {
-    "name":"assets/img/escoba-recogedor.png"
+    "name":"assets/img/escoba-recogedor.png",
+    "size":"width: 10rem; height: 13rem"
 },
 {
-    "name":"assets/img/trapeador.png"
+    "name":"assets/img/trapeador.png",
+    "size":"width: 10rem; height: 11rem"
 },
 {
-    "name":"assets/img/tapete-entrada.png"
+    "name":"assets/img/tapete-entrada.png",
+    "size":"width: 12rem; height: 12rem"
 },
 {
-    "name":"assets/img/tapetes.png"
+    "name":"assets/img/tapetes.png",
+    "size":"width: 10rem; height: 10rem"
 },
 {
-    "name":"assets/img/arroz.png"
+    "name":"assets/img/arroz.png",
+    "size":"width: 9rem; height:11rem"
 },
 {
-    "name":"assets/img/frijolero.png"
+    "name":"assets/img/frijolero.png",
+    "size":"width: 9rem; height:11rem"
 },
 {
-    "name":"assets/img/azucarera.png"
+    "name":"assets/img/azucarera.png",
+    "size":"width: 9rem; height:11rem"
 },
 {
-    "name":"assets/img/olla-leche.png"
+    "name":"assets/img/olla-leche.png",
+    "size":"width: 11rem; height: 9rem"
 },
 {
-    "name":"assets/img/sabanas.png"
+    "name":"assets/img/sabanas.png",
+    "size":"width: 11rem; height:11rem"
 },
 {
-    "name":"assets/img/colcha.png"
+    "name":"assets/img/colcha.png",
+    "size":"width: 11rem; height:11rem"
 },
 {
-    "name":"assets/img/jarra-3litros.png"
+    "name":"assets/img/jarra-3litros.png",
+    "size":"width: 10rem; height: 12rem"
 },
 {
-    "name":"assets/img/tapa-microondas.png"
+    "name":"assets/img/tapa-microondas.png",
+    "size":"width: 10rem; height: 12rem"
 },
 {
-    "name":"assets/img/comal-hierro.png"
+    "name":"assets/img/comal-hierro.png",
+    "size":"width: 12rem; height: 12rem"
 },
 {
-    "name":"assets/img/colador.png"
+    "name":"assets/img/colador.png",
+    "size":"width: 13rem; height: 11rem"
 },
 {
-    "name":"assets/img/mandil.png"
+    "name":"assets/img/mandil.png",
+    "size":"width: 10rem; height: 14rem"
 },
 {
-    "name":"assets/img/tuppers.png"
+    "name":"assets/img/tuppers.png",
+    "size":"width: 14rem; height: 13rem"
 },
 {
-    "name":"assets/img/plumero.png"
+    "name":"assets/img/plumero.png",
+    "size":"width: 12rem; height: 12rem"
 },
 {
-    "name":"assets/img/ganchos.png"
+    "name":"assets/img/ganchos.png",
+    "size":"width: 12rem; height: 12rem"
 },
 {
-    "name":"assets/img/matamoscas.png"
+    "name":"assets/img/matamoscas.png",
+    "size":"width: 12rem; height: 12rem"
 },
 {
-    "name":"assets/img/cebolla.png"
+    "name":"assets/img/cebolla.png",
+    "size":"width: 12rem; height: 12rem"
 },
 {
-    "name":"assets/img/medidor-vidrio.png"
+    "name":"assets/img/medidor-vidrio.png",
+    "size":"width: 20rem; height: 14rem"
+},
+{
+    "name":"assets/img/tapete-cocina.png",
+    "size":"width: 12rem; height: 12rem"
+},
+{
+    "name":"assets/img/botanero.png",
+    "size":"width: 12rem; height: 12rem"
+},
+{
+    "name":"assets/img/pastelera.png",
+    "size":"width: 12rem; height: 12rem"
+},
+{
+    "name":"assets/img/taza-11onza.png",
+    "size":"width: 8rem; height: 9rem"
+},
+{
+    "name":"assets/img/medidor-tapa.png",
+    "size":"width: 14rem; height: 13rem"
+},
+{
+    "name":"assets/img/molde-gelatina.png",
+    "size":"width: 12rem; height: 12rem"
 }
 ]
